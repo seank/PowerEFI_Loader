@@ -1,3 +1,5 @@
-# UUID    	Group Name
+# UUID                 	Group Name
 #
-user:seank	user/Sean Keys (seank)
+global:Registered-Users	Registered Users
+user:essess            	user/essess
+user:seank             	user/Sean Keys (seank)
