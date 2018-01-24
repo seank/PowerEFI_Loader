@@ -7,12 +7,15 @@
 
 
 #include <iostream>
+#include "src/lib/logging/logger.h"
 
 using std::cout;
 
+#define LOGGING_LEVEL_1
+
 int main() {
 
-  cout << "Yo!";
+  LOG("Starting PowerEFI SmartFusion2 CLI loader.");
   return 0;
 }
 
