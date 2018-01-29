@@ -13,6 +13,7 @@ cc_binary(
 	],
 	copts = COPTS,
 	deps= [
-	  "//src/lib/logging:dobbs_logger"
+		"//src/lib/logging:dobbs_logger",
+		"//src/lib/uart:uart_interface",
 	],
 )
