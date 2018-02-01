@@ -18,5 +18,9 @@ cc_library(
   visibility=[
     "//visibility:public",
   ],
+  deps= [
+		"//src/lib/logging:dobbs_logger",
+		"//src/lib/uart:uart_interface",
+  ],
   copts = COPTS,
 )

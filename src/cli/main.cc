@@ -22,8 +22,16 @@ int main() {
   LOG("Starting PowerEFI SmartFusion2 CLI loader.");
 
   PowerEFI::UARTinterface uart_if;
-  string path = "/bad/path";
+  string path = "/dev/ttyUSB0";
   uart_if.Init(path);
+
+  for (int i = 0; i < 100; ++i) {
+    uart_if.WriteByte('h');
+    uint8_t b;
+    uart_if.ReadByte(&b, 2000001);
+    std::cout << "read " << b << std::endl;
+  }
+
 
   return 0;
 }

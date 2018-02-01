@@ -15,5 +15,6 @@ cc_binary(
 	deps= [
 		"//src/lib/logging:dobbs_logger",
 		"//src/lib/uart:uart_interface",
+		"//src/lib/sf2_isp:sf2_isp",
 	],
 )
