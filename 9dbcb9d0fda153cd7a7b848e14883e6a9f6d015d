@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b1ee2356_7603c22d",
+        "filename": "src/lib/uart/uart_interface.cc",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1013372
+      },
+      "writtenOn": "2018-02-10T23:50:24Z",
+      "side": 1,
+      "message": "You should be checking the return value of open, rather than checking errno. System functions are actually allowed to change errno on success, however errno is only actually usable on failure (_tty_fd \u003d\u003d -1)",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 19
+      },
+      "revId": "9dbcb9d0fda153cd7a7b848e14883e6a9f6d015d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c5b73a26_bf1bce1d",
+        "filename": "src/lib/uart/uart_interface.cc",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1013372
+      },
+      "writtenOn": "2018-02-10T23:50:24Z",
+      "side": 1,
+      "message": "Think about having an error enum with a function like GetLastError() returning the last error, rather than just logging what the error was? This would provide a path for user notification on non-console applications",
+      "range": {
+        "startLine": 28,
+        "startChar": 4,
+        "endLine": 28,
+        "endChar": 17
+      },
+      "revId": "9dbcb9d0fda153cd7a7b848e14883e6a9f6d015d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "482f14ac_23a15fd0",
+        "filename": "src/lib/uart/uart_interface.cc",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1013372
+      },
+      "writtenOn": "2018-02-10T23:50:24Z",
+      "side": 1,
+      "message": "What is the intended use for this library? In its own thread with its own delay loop? Setting VMIN to 0 requires either select() or timed polling with a delay, since this effectively makes read() non-blocking. I\u0027m personally a fan of this, but many people aren\u0027t.",
+      "range": {
+        "startLine": 45,
+        "startChar": 2,
+        "endLine": 45,
+        "endChar": 28
+      },
+      "revId": "9dbcb9d0fda153cd7a7b848e14883e6a9f6d015d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
