@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "cc68bdb6_d361d626",
+        "filename": "src/lib/uart/uart_interface.cc",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1013315
+      },
+      "writtenOn": "2018-02-26T01:31:20Z",
+      "side": 1,
+      "message": "Noted! Since this is already merged, I\u0027ll submit a separate CL.",
+      "parentUuid": "b1ee2356_7603c22d",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 19
+      },
+      "revId": "9dbcb9d0fda153cd7a7b848e14883e6a9f6d015d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c5b73a26_bf1bce1d",
         "filename": "src/lib/uart/uart_interface.cc",
         "patchSetId": 1
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "53fe6212_9bc808d0",
+        "filename": "src/lib/uart/uart_interface.cc",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1013315
+      },
+      "writtenOn": "2018-02-26T01:31:20Z",
+      "side": 1,
+      "message": "Noted! Since this is already merged, I\u0027ll submit a separate CL.",
+      "parentUuid": "c5b73a26_bf1bce1d",
+      "range": {
+        "startLine": 28,
+        "startChar": 4,
+        "endLine": 28,
+        "endChar": 17
+      },
+      "revId": "9dbcb9d0fda153cd7a7b848e14883e6a9f6d015d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "482f14ac_23a15fd0",
         "filename": "src/lib/uart/uart_interface.cc",
         "patchSetId": 1
@@ -59,6 +107,30 @@
       "writtenOn": "2018-02-10T23:50:24Z",
       "side": 1,
       "message": "What is the intended use for this library? In its own thread with its own delay loop? Setting VMIN to 0 requires either select() or timed polling with a delay, since this effectively makes read() non-blocking. I\u0027m personally a fan of this, but many people aren\u0027t.",
+      "range": {
+        "startLine": 45,
+        "startChar": 2,
+        "endLine": 45,
+        "endChar": 28
+      },
+      "revId": "9dbcb9d0fda153cd7a7b848e14883e6a9f6d015d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af6f960_deda5226",
+        "filename": "src/lib/uart/uart_interface.cc",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1013315
+      },
+      "writtenOn": "2018-02-26T01:31:20Z",
+      "side": 1,
+      "message": "Yes, it\u0027s likely to be run in its own thread. Seems to be pretty versatile like this.",
+      "parentUuid": "482f14ac_23a15fd0",
       "range": {
         "startLine": 45,
         "startChar": 2,
